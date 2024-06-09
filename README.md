@@ -1,4 +1,5 @@
-# projects
-this is my first repositry.
+# Nike clone
+This is my first repository 
 <br>
-Author - sumit singh
+This is a Nike clone frontend project using only Html and CSS.
+Author - Sumit Singh
