@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100vh;
+        width: 100vh;
+        color: #ffff;
+        background-color: rgb(239, 33, 10);
+      }
+
+      .main {
+        /* height: 100vh; */
+        width: 80vw;
+        background-color: black;
+        margin: 10vh 0 0 9vw;
+        padding: 3vh 5vw 0 5vw;
+      }
+
+      .main .image {
+        position: absolute;
+        right: 15vw;
+        height: 60vh;
+        width: 15vw;
+      }
+
+      .NavLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .NavLogo img {
+        height: 6vh;
+        width: 5vw;
+      }
+
+      .NavLogo .p {
+        color: rgb(205, 205, 198);
+        display: flex;
+        gap: 2vw;
+        padding: 1vh;
+      }
+
+      /* .NavLogo .p p:hover{
+    color: red;
+} */
+
+      .NavLogo .button {
+        display: flex;
+        gap: 1vw;
+      }
+
+      .NavLogo button {
+        color: rgb(205, 205, 198);
+        background-color: rgb(96, 96, 91);
+        height: 6vh;
+        width: 3vw;
+        border-radius: 10vh;
+      }
+
+      .NavLogo .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2vh;
+        font-size: 0.8vw;
+        width: 10vw;
+      }
+      .mainText {
+        display: flex;
+      }
+
+      /* .text-left-top{
+    display: flex;
+
+} */
+
+      .text-left {
+        height: 80vh;
+        width: 50vw;
+        /* background-color: salmon; */
+      }
+
+      .text-right {
+        height: 80vh;
+        width: 50vw;
+        /* background-color: rgb(101, 39, 162); */
+        padding: 1vh 0 0 16vw;
+      }
+
+      .text-left .sneakers {
+        font-family: Courier New, monospace;
+        opacity: 1.2;
+        margin-top: 90px;
+        font-size: 60px;
+        line-height: 50px;
+      }
+      .sneakers button {
+        height: 7vh;
+        width: 12vw;
+        background-image: url(https://i0.wp.com/www.shoesinkart.com/wp-content/uploads/2024/04/2df56b60848af849635520ece9acf7c7.jpg?resize=300%2C450&ssl=1);
+        background-size: 160px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        /* padding-left: 20px; */
+      }
+
+      .text-left .pera {
+        margin: 20px 0 20px 0;
+        opacity: 0.7;
+      }
+
+      .text-left-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+      }
+
+      .text-left-btn .doler {
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      .text-left-btn .stars .icont {
+        display: flex;
+        color: gold;
+      }
+
+      .text-left-btn button {
+        height: 7vh;
+        width: 11vw;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        font-size: 12px;
+      }
+
+      .mainbottom {
+        height: 50vh;
+        width: 70vw;
+        /* background-color: salmon; */
+        display: flex;
+      }
+
+      .mainbottom .box1 {
+        height: 48vh;
+        width: 18vw;
+        background-color: rgb(63, 64, 63);
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      .box1-img {
+        height: 28vh;
+        width: 14vw;
+        background-image: url(https://pics.craiyon.com/2023-08-02/ee60a0d0cefa41738860ff8504d311b3.webp);
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        margin: 15px 0 0 20px;
+      }
+
+      .box2-img {
+        height: 28vh;
+        width: 14vw;
+        background-image: url(https://i.pinimg.com/736x/33/73/b3/3373b308935a205a905ced4d3d45bc73.jpg);
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        margin: 15px 0 0 20px;
+      }
+
+      .box3-img {
+        height: 28vh;
+        width: 14vw;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjB9AhqBX1JMH0YjfgD0-voZJb8n7y8lbjYh5-0HwkwQ&s);
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        margin: 15px 0 0 20px;
+      }
+
+      .box4-img {
+        height: 28vh;
+        width: 14vw;
+        background-image: url(https://foot-balla.com/cdn/shop/products/image_a769a1ce-de8e-4ccb-a75c-fe2f42c69ff4_medium.jpg?v=1488164131);
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        margin: 15px 0 0 20px;
+      }
+
+      .box1-rank {
+        display: flex;
+        justify-content: space-between;
+        color: gold;
+        margin-top: 20px;
+        padding: 0 22px 0 10px;
+      }
+
+      .box1-rank p {
+        color: white;
+      }
+
+      button {
+        height: 7vh;
+        width: 14vw;
+        margin: 15px 0 0 15px;
+        background-color: red;
+        color: white;
+        border-radius: 15px;
+      }
+
+      .mainbottom .box2 {
+        height: 48vh;
+        width: 18vw;
+        background-color: rgb(63, 64, 63);
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      .mainbottom .box3 {
+        height: 48vh;
+        width: 18vw;
+        background-color: rgb(63, 64, 63);
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      .mainbottom .box4 {
+        height: 48vh;
+        width: 18vw;
+        background-color: rgb(63, 64, 63);
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      .slider {
+        height: 12vh;
+        width: 70vw;
+        /* background-color: aqua; */
+        margin-top: 60px;
+        display: grid;
+        grid-auto-flow: column;
+      }
+      .slider::-webkit-scrollbar {
+        display: none;
+      }
+
+      .slider img {
+        height: 10vh;
+        width: 11vw;
+        object-fit: cover;
+        background-color: black;
+        display: flex;
+        animation-name: scroll;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-100% - 9vw));
+        }
+      }
+
+      .botm {
+        height: 40vh;
+        width: 60vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="maintop">
+        <div class="mainNav">
+          <div class="NavLogo">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/010/994/297/original/nike-logo-red-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg"
+              alt="LOGO"
+            />
+            <div class="p">
+              <p>New & Featured</p>
+              <p>Men</p>
+              <p>Women</p>
+              <p>Kids</p>
+              <p>Sale</p>
+              <p>Gift</p>
+            </div>
+            <div class="button">
+              <button class="search">
+                Search here <i class="ri-search-2-line"></i>
+              </button>
+              <button><i class="ri-inbox-2-fill"></i></button>
+              <button><i class="ri-bookmark-3-line"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mainText">
+          <div class="text-left">
+            <div class="text-left-top">
+              <p class="sneakers">
+                All the <br />
+                sneakers <br />
+                you want is <br />
+                here. <button></button>
+              </p>
+              <p class="pera">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                labore praesentium vitae. Doloremque ducimus laudantium, quos.
+              </p>
+            </div>
+            <div class="text-left-btn">
+              <p class="doler">$420</p>
+              <button>Buy Now</button>
+              <div class="stars">
+                <div class="icont">
+                  <i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                  ><i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                  ><i class="ri-magic-fill"></i>
+                </div>
+                <p>230 Rating Worldwide</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-right">
+            <img
+              src="https://i0.wp.com/www.shoesinkart.com/wp-content/uploads/2024/04/2df56b60848af849635520ece9acf7c7.jpg?resize=300%2C450&ssl=1"
+              alt="image"
+            />
+          </div>
+        </div>
+        <div class="mainbottom">
+          <div class="box1">
+            <div class="box1-img"></div>
+            <div class="box1-rank">
+              <p>$778.35</p>
+              <div class="icont">
+                <i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i>
+              </div>
+            </div>
+            <button>Add To Cart <i class="ri-briefcase-2-line"></i></button>
+          </div>
+          <div class="box2">
+            <div class="box2-img"></div>
+            <div class="box1-rank">
+              <p>$756.34</p>
+              <div class="icont">
+                <i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i>
+              </div>
+            </div>
+            <button>Add To Cart <i class="ri-briefcase-2-line"></i></button>
+          </div>
+          <div class="box3">
+            <div class="box3-img"></div>
+            <div class="box1-rank">
+              <p>$793.53</p>
+              <div class="icont">
+                <i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i>
+              </div>
+            </div>
+            <button>Add To Cart <i class="ri-briefcase-2-line"></i></button>
+          </div>
+          <div class="box4">
+            <div class="box4-img"></div>
+            <div class="box1-rank">
+              <p>$825.53</p>
+              <div class="icont">
+                <i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i><i class="ri-magic-fill"></i
+                ><i class="ri-magic-fill"></i>
+              </div>
+            </div>
+            <button>Add To Cart <i class="ri-briefcase-2-line"></i></button>
+          </div>
+        </div>
+        <div class="slid">
+          <div class="slider">
+            `
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsA3Ksu8Fqo9YgyYkD0TUK8iTlBuD5zoVXOimPg3vog&s"
+              alt=""
+            />
+            <img
+              src="https://kreafolk.com/cdn/shop/articles/reebok-logo-design-history-and-evolution-kreafolk.jpg?v=1707034502&width=2048"
+              alt=""
+            />
+            <img
+              src="https://assets.turbologo.com/blog/en/2019/11/19084917/puma-logo-cover-958x575.png"
+              alt=""
+            />
+            <img
+              src="https://static.vecteezy.com/ti/gratis-vektor/p1/19136310-adidas-logo-adidas-symbol-kostenloser-kostenlos-vektor.jpg"
+              alt=""
+            />
+            <img
+              src="https://cdn.accentuate.cloud/images/51822493850/Asics-W-01.png?v=1646008203629"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwZEdkjts3Tauq_CwVjr3zgVPAIpL-yNrgP2cNFbsBw&s"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsA3Ksu8Fqo9YgyYkD0TUK8iTlBuD5zoVXOimPg3vog&s"
+              alt=""
+            />
+            <img
+              src="https://kreafolk.com/cdn/shop/articles/reebok-logo-design-history-and-evolution-kreafolk.jpg?v=1707034502&width=2048"
+              alt=""
+            />
+            <img
+              src="https://assets.turbologo.com/blog/en/2019/11/19084917/puma-logo-cover-958x575.png"
+              alt=""
+            />
+            <img
+              src="https://static.vecteezy.com/ti/gratis-vektor/p1/19136310-adidas-logo-adidas-symbol-kostenloser-kostenlos-vektor.jpg"
+              alt=""
+            />
+            <img
+              src="https://cdn.accentuate.cloud/images/51822493850/Asics-W-01.png?v=1646008203629"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwZEdkjts3Tauq_CwVjr3zgVPAIpL-yNrgP2cNFbsBw&s"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="botm"></div>
+      </div>
+    </div>
+  </body>
+</html>
